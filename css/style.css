@@ -36,7 +36,19 @@ a{
 .suptitle-secondary{
     color: #9DA4BD99;
 }
-
+.suptitle-primary::before,
+.suptitle-secondary::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: #9DA4BD99;
+    vertical-align: middle;
+}
+.suptitle-primary::before {
+    background: #303030;
+}
 h2.section-title{
     font-family: 'Raleway';
     font-weight: bold;
@@ -62,7 +74,9 @@ h2.section-title.lighten{
     display: flex;
     flex-wrap: wrap;
 }
+.suptitle-secondary{
 
+}
 /* Navbar styles here */
 nav.navbar{
     width: 100%;
