@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
@@ -171,11 +171,7 @@
                     <p>John Smith</p>
                     <span>Extreme Barber</span>
                     <div class="master-social-box">
-                        <a href="" class="master-social-link">
-                            <svg>
-                                <use href='./images/icons/sprite.svg#icon-instagram' ></use>
-                            </svg>
-                        </a>
+                        <a href="" class="master-social-link inst"></a>
                         <a href="" class="master-social-link">
                             <svg>
                                 <use href='./images/icons/sprite.svg#icon-twitter' ></use>
@@ -254,10 +250,26 @@
         <section class="section-box">
             <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
             <div class="image-gallery">
-                <img src="./images/Gallery/image-1.jpg" alt="Стрижка машинкой">
-                <img src="./images/Gallery/image-2.jpg" alt="Намазывание пеной">
-                <img src="./images/Gallery/image-3.jpg" alt="Пропаривание лица">
-                <img src="./images/Gallery/image-4.jpg" alt="Стрижка опасной бритвой">
+                <div class="galerry-card">
+                    <img src="./images/Gallery/image-1.jpg" alt="Стрижка машинкой">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odit quas incidunt debitis qui, inventore quis magnam esse blanditiis quidem, voluptatem corrupti consequatur pariatur voluptas eum deleniti voluptate ducimus explicabo.</div>
+                </div>
+                <div class="galerry-card">
+                    <img src="./images/Gallery/image-2.jpg" alt="Намазывание пеной">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odit quas incidunt debitis qui, inventore quis magnam esse blanditiis quidem, voluptatem corrupti consequatur pariatur voluptas eum deleniti voluptate ducimus explicabo.</div>
+                </div>
+                <div class="galerry-card">
+                    <img src="./images/Gallery/image-3.jpg" alt="Пропаривание лица">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odit quas incidunt debitis qui, inventore quis magnam esse blanditiis quidem, voluptatem corrupti consequatur pariatur voluptas eum deleniti voluptate ducimus explicabo.</div>
+
+                </div>
+                <div class="galerry-card">
+                    <img src="./images/Gallery/image-4.jpg" alt="Стрижка опасной бритвой">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda odit quas incidunt debitis qui, inventore quis magnam esse blanditiis quidem, voluptatem corrupti consequatur pariatur voluptas eum deleniti voluptate ducimus explicabo.</div>
+                </div>
+
+
+
             </div>
         </section>
 
@@ -265,18 +277,32 @@
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-        <div>
+        <div class="footer-form">
             <h2 class="section-title lighten">Онлайн-запись</h2>
-            <form action="">
-                <input type='submit' class="primary-btn"/>
+            <form action="#" class="footer-form-box">
+
+                <label for="userName" class="field-label">
+                    <input type="text" name="userName" id="userName" class="form-field" required>
+                    <legend>Имя*</legend>
+                </label>
+
+                <label for="userName" class="field-label">
+                    <input type="tel" name="userPhone" id="userPhone" class="form-field" required>
+                    <legend>Телефон*</legend>
+                </label>
+
+                <textarea name="userMessage" class='form-field' cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <button type="submit" class="primary-btn">Отправить</button>
             </form>
         </div> 
         <div class="footer-contacts">
             <h2 class="section-title lighten">Контакты</h2>
             <div class="contacts-box">
-                <adress></adress>
-                <a href="tel:"></a>
-                <a href="mailto:"></a>
+                <adress>ул. Васильковая, 7а<br>
+                Киев, 08132
+                </adress>
+                <a href="tel:">+38 044 111 11 11</a>
+                <a href="mailto:">barbershop@email.com</a>
             </div>
 
             <div class="schedule-box">

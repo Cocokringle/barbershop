@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Sandbox</title>
+    <link rel='stylesheet' href="./css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Lesson 12</h1>
+        <h2>Form styles</h2>
+    </header>
+
+    <section>
+
+        <form name="form-msg" class="form-box">
+                <h2>Registration</h2>
+
+                <label for="userName">Name</label>
+                <input type="text" name="userName" id="userName" class="form-input" placeholder="Name" minlength="5">
+
+                <label for="userMail">Mail</label>
+                <div class="required-field">
+                    <input type="email" name="userMail" id="userMail" class="form-input" placeholder="Mail" required>
+                    <legend>Please fill this field</legend>
+                </div>
+
+                <label for="userMail">Phone</label>
+                <input type="tel" name="userPhone" id="userPhone" value='+380' class="form-input">
+
+                <!-- <input type="number" min="1" value='0' max="10">  -->
+
+                <label for="userPass">Password</label>
+                <input type="password" name="userPass" id="userPass" minlength="8" maxlength="12" class="form-input">
+
+                <button type="submit" class="form-button">Register</button>
+
+                <div class="checkbox-group" role="group">
+                    <input type="checkbox" name="Choice" id="check1" checked>
+                    <label for="check1">Agree with everything</label>
+                </div>
+        </form>
+
+        <form action="#" class="checkbox-container">
+            <label for="check1">
+                <input type="checkbox" id="check1" checked>
+                <span class="checkbox"></span>
+                Choice
+            </label>
+            <label for="check2">
+                <input type="checkbox" id="check2">
+                <span class="checkbox"></span>
+                Choice
+            </label>
+            <label for="check3">
+                <input type="checkbox" id="check3" disabled>
+                <span class="checkbox"></span>
+                Choice
+            </label>
+            <label for="check4">
+                <input type="checkbox" id="check4" disabled checked>
+                <span class="checkbox"></span>
+                Choice
+            </label>
+        </form>
+
+    </section>
+
+
+</body>
+</html>

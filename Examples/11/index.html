@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Sandbox</title>
+    <link rel='stylesheet' href="./css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Lesson 11</h1>
+        <h2>Form inputs</h2>
+    </header>
+
+    <section>
+
+        <form name="form-msg" class="form-box">
+
+            <input type="text" required placeholder="Name">
+            <input type="number" step="2" min="0" max="10" placeholder="Number">
+            <input type="tel" value="+380">
+            <input type="email" required placeholder="eMail" disabled>
+            <input type="password" placeholder="Your Pass">
+
+
+            <fieldset>
+                <legend>Choose One</legend>
+                <label for="check-1">Choose</label>
+                <input type="checkbox" name="checkbox" id="check-1" checked>
+                <label for="check-2">Choose</label>
+                <input type="checkbox" name="checkbox" id="check-2" checked>
+                <label for="check-3">Choose</label>
+                <input type="checkbox" name="checkbox" id="check-3">
+
+            </fieldset>
+
+            <div role="group">
+                <legend>Choose One</legend>
+                <label for="radio-1">Choose</label>
+                <input type="radio" name="radio" id="radio-1">
+                <label for="radio-2">Choose</label>
+                <input type="radio" name="radio" id="radio-2" checked>
+                <label for="radio-3">Choose</label>
+                <input type="radio" name="radio" id="radio-3" disabled>
+
+            </div>
+
+            <input type="range">
+            <input type="date">
+            <input type="time">
+            <input type="datetime-local">
+            <input type="color">
+
+
+            <input type="reset">
+
+            <label for="file" class="text-label">
+                <input type="file" id="file">
+            </label>
+
+            <textarea name="textarea" id="textarea" cols="10" rows="10" placeholder="Comment"></textarea>
+
+
+
+            <button type="submit">Submit</button>
+
+            <select id="size" name="size">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>
+              </select>
+        </form>
+
+
+
+    </section>
+
+
+</body>
+</html>
